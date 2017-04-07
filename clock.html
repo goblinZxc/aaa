@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<canvas id="can" width="500" height="500">
+		您的浏览器当前版本不支持canvas表签
+	</canvas>
+</body>
+<script>
+	var can=document.querySelector("#can");
+	var o=can.getContext("2d");
+	can.style.border="2px solid #999";
+clock();
+setInterval(clock,1000);
+function clock(){
+	var time=new Date();
+	var sec=time.getSeconds();
+	var min=time.getMinutes();
+	var hour=time.getHours();
+	min=min+sec/60;
+	hour=hour+min/60;
+	hour=hour>12?hour-12:hour;
+	console.log(hour);
+
+	o.clearRect(0,0,500,500);
+
+	// 绘制基本面板
+	o.save();
+	o.beginPath();
+	// o.translate(250,250);
+	o.strokeStyle="green";
+	o.arc(250,250,220,0,Math.PI*2);
+	o.stroke();
+	o.closePath();
+	o.restore();
+
+	// 画时针的刻度  30° 
+	for(var i=0;i<12;i++){
+		o.save();
+		o.translate(250,250);
+		o.lineWidth=4;
+		o.rotate(i*30*Math.PI/180);
+		o.strokeStyle="#000";
+		o.beginPath();
+		o.moveTo(0,218);
+		o.lineTo(0,205);
+		o.stroke();
+		o.closePath();
+		o.restore();
+	}       
+
+	for(var j=0;j<60;j++){
+		o.save();
+		o.translate(250,250);
+		o.lineWidth=1;
+		o.rotate(j*6*Math.PI/180);
+		o.strokeStyle="#000";
+		o.beginPath();
+		o.moveTo(0,218);
+		o.lineTo(0,210);
+		o.stroke();
+		o.closePath();
+		o.restore();
+	}
+		
+		// 画秒针
+		o.save();
+		o.translate(250,250);
+		o.rotate(sec*6*Math.PI/180);
+		o.lineWidth=3;
+		o.strokeStyle="red";
+		o.beginPath();
+		o.moveTo(0,0);
+		o.lineTo(0,-200);
+		o.stroke();
+		o.closePath();
+		o.restore();
+		
+		// 画分针
+		o.save();
+		o.translate(250,250);
+		o.rotate(min*6*Math.PI/180);
+		o.lineWidth=3;
+		o.strokeStyle="#000";
+		o.beginPath();
+		o.moveTo(0,0);
+		o.lineTo(0,-180);
+		o.stroke();
+		o.closePath();
+		o.restore();
+
+		// 画时针
+		o.save();
+		o.translate(250,250);
+		o.lineWidth=3;
+		o.rotate(hour*30*Math.PI/180);
+		o.strokeStyle="#222";
+		o.beginPath();
+		o.moveTo(0,0);
+		o.lineTo(0,-160);
+		o.stroke();
+		o.closePath();
+		o.restore();
+}
+</script>
+</html>
