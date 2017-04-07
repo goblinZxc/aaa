@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.box{
+		width: calc(500px/7);height: 130px;border: 1px solid #000;overflow: hidden;margin: 100px auto;
+	}
+	.inner{width: 500px;height: 130px;background: url(2.jpg) 0 0 no-repeat;animation:move 1s steps(7) infinite;}
+	.box1{
+		width: calc(450px/5);height: 247px;border: 1px solid #000;overflow: hidden;margin: 100px auto;
+	}
+	.box1 .inner{width: 450px;height: 247px;background: url(3.jpg) 0 0 no-repeat;animation:move1 1s steps(5) infinite;}
+	@keyframes move{
+		0%{
+			background-position: 0 0;
+		}
+		100%{
+			background-position: -500px 0;
+		}
+	}
+	@keyframes move1{
+		0%{
+			background-position: 0 0;
+		}
+		100%{
+			background-position: -450px 0;
+		}
+	}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="inner"></div>
+	</div>
+	<div class="box1">
+		<div class="inner"></div>
+	</div>
+</body>
+</html>

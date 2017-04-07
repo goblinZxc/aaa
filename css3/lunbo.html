@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<style>
+	.wheelbox{
+		width: 940px;height: 400px;border: 1px solid red;margin: 20px auto;overflow: hidden;
+	}
+	.wheelbox:hover .wheel{animation-play-state:paused;}
+	.wheel{
+		width: 3100px;height: 100%;animation:wheel 10s linear infinite;
+	}
+	.item{width: 300px;height:360px;margin: 20px 0 20px 10px;float: left;background: #ccc;font-size: 100px;text-align: center;color: #fff;line-height: 360px;font-family: arial;}
+	@keyframes wheel{
+		0%{
+			margin-left: 0;
+		}
+		100%{
+			margin-left:-2170px;
+		}
+	}
+</style>
+</head>
+<body>
+	<div class="wheelbox">
+		<div class="wheel">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+			<div class="item">6</div>
+			<div class="item">7</div>
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>	
+		</div>
+	</div>
+</body>
+</html>
