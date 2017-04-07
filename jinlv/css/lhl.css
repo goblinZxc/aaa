@@ -1,0 +1,290 @@
+@import url(base.css);
+.lhl-bg{
+    width:100%;
+    height:100vh;
+    background-image: url("../images/lhl-gb.png");
+    background-size: cover;
+}
+.lhl-container{
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    overflow: hidden;
+}
+.lhl-hy{
+    height:.3rem;
+    width:100%;
+    margin: 1.3rem 0 1.45rem 0;
+}
+.lhl-hy img{
+    height:100%;
+    display: block;
+    margin: 0 auto;
+}
+.lhl-logo{
+    width:100%;
+    height:1.7rem;
+    margin-bottom: 3.1rem;
+}
+@media screen and (min-width: 320px){
+    .lhl-logo{
+        margin-bottom: 3.1rem;
+    }
+}
+@media screen and (max-width: 320px){
+    .lhl-logo{
+        margin-bottom: 2.5rem;
+    }
+}
+.lhl-logo img{
+    height:100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.lhl-loginbtn{
+    width:100%;
+    height:.96rem;
+    text-align: center;
+    margin-bottom: .64rem;
+}
+.lhl-loginbtn .loginbtnlis{
+       width: 2.6rem;
+    height: 100%;
+    display: inline-block;
+    margin: 0 .28rem;
+    background: #fff;
+    background-size: contain;
+    line-height: .96rem;
+    border-radius: .48rem;
+    position: relative;
+}
+.lhl-loginbtn .loginbtnlis i{
+    width: .1rem;
+    height: .1rem;
+    border-radius: 50%;
+    position: absolute;
+    top: .45rem;
+    background: #416df7;
+}
+.lhl-loginbtn .loginbtnlis .lhl-left{
+    left: .5rem;
+}
+.lhl-loginbtn .loginbtnlis .lhl-right{
+    right: .5rem;
+}
+.lhl-loginbtn .loginbtnlis a{
+    display: block;
+    width:100%;
+    height:100%;
+    font-size: 0.36rem;
+    color: #4E5BF7;
+}
+.lhl-three{
+    width:100%;
+    height:.74rem;
+    text-align: center;
+}
+.lhl-three img{
+    height:100%;
+}
+.lhl-link{
+    width:100%;
+    height:.6rem;
+    margin: .4rem 0 0 0;
+    font-size: 0;
+    text-align: center;
+}
+.lhl-link a{
+    display: inline-block;
+    height:100%;
+    margin: 0 .22rem;
+}
+.lhl-link a img{
+    height:100%;
+}
+/*------------------------------------
+登录页*/
+.lhl-reglogo{
+    width:100%;
+    height:1.7rem;
+    margin: .78rem 0 1.56rem 0;
+    text-align: center;
+}
+.lhl-reglogo img{
+    height:100%;
+    border-radius: 50%;
+}
+.lhl-form{
+    width:100%;
+}
+.lhl-form form{
+    display: block;
+    width:100%;
+}
+.lhl-inputbox{
+    width:4.74rem;
+    height:.9rem;
+    line-height:.9rem;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: .45rem;
+    padding: .1rem .70rem;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: .45rem;
+    font-size: 0;
+}
+.lhl-inputbox input{
+    width:100%;
+    font-size: 0.28rem;
+    border: 0;
+}
+.lhl-input-logo{
+    position: absolute;
+    width:.3rem;
+    left: .25rem;
+    top:.28rem;
+}
+.lhl-ok{
+    position: absolute;
+    width:.28rem;
+    top:.26rem;
+    right:.23rem;
+    display: none;
+}
+.lhl-inputbox2{
+    width:4.74rem;
+    padding-left: .1rem;
+    color: #fff;
+    font-size: .12rem;
+    margin:0 auto;
+}
+.lhl-inputbox2 input{
+    height:.20rem;
+}
+.lhl-tijiao{
+    width:4.75rem;
+    height:.9rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: .6rem;
+    border-radius: .45rem;
+    background: #ffd500;
+box-shadow: inset 0rem 0rem 20px 5px rgba(0, 0, 0, 0.35);
+    border: 0;
+    color: #fff;
+    text-align: center;
+    line-height: 0.9rem;
+    font-size: 0.36rem;
+    text-shadow: 0.01rem 0rem 0.1rem #000;
+}
+.lhl-back{
+    display: block;
+    position: absolute;
+    left:.24rem;
+    top:.3rem;
+    width:.36rem;
+}
+.lhl-back img{
+    width:100%;
+}
+/*---------------------------------*/
+/*注册成功*/
+.lhl-shode{
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.89);
+}
+.lhl-shode img{
+    margin-top: 3.7rem;
+    height: 2.8rem;;
+}
+.lhl-shode a{
+    display: block;
+    position: absolute;
+    width:.8rem;
+    height:.8rem;
+    top:3.9rem;
+    left:3.4rem;
+}
+.lhl-inputbox span{
+    font-size: .1rem;
+    padding: .1rem;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: .15rem;
+    position: absolute;
+    top:-.6rem;
+    right:50%;
+    margin: 0 auto;
+    height:.2rem;
+    line-height:0;
+    margin-right: -1.25rem;
+}
+.lhl-inputbox span img{
+    height:.2rem;
+    margin: 0 .1rem;
+}
+/*闪屏*/
+.lhl-splash{
+    width:300%;
+    height:100%;
+    position: relative;
+    overflow: hidden;
+}
+.lhl-splash-lis{
+    float: left;
+    width:33.33333%;
+    height:100%;
+    text-align: center;
+    position: relative;
+}
+.lhl-splash-lis img{
+   height:100%;
+}
+.lhl-splash-lis .lhl-sptz{
+    position: absolute;
+    width: 1.5rem;
+    height: .6rem;
+    display: block;
+    right: 0;
+    top: .3rem;
+}
+.lhl-splash-lis .lhl-start{
+    position: absolute;
+    width: 3.4rem;
+    height: .8rem;
+    display: block;
+    right: 0rem;
+    left: 0;
+    margin: 0 auto;
+    bottom: 1.86rem;
+}
+.lhl-btn{
+    width:100%;
+    position: absolute;
+    text-align: center;
+    left:0;
+    bottom: 1.2rem;
+    height:.16rem;
+    font-size: 0;
+}
+.lhl-btn li{
+    width:.16rem;
+    height:.16rem;
+    margin: 0 .12rem;
+    background: rgba(0, 0, 0, 0.11);
+    display: inline-block;
+    border-radius: 50%;
+
+}
+.lhl-btn .active{
+    background: #1873d3;
+}

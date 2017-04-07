@@ -1,0 +1,67 @@
+body,input,form,p,pre,h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;
+	font-size: 24px;
+}
+ul,li,ol,dl,dt,dd{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+input[type="button"],button,a{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+img{
+	border: 0;
+}
+body{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	-webkit-user-select:none;
+}
+input,textarea{
+	outline: none;
+}
+em,i{
+	font-style: normal;
+}
+
+/*单行文本*/
+.slh1{
+	text-overflow:ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+
+
+/*两行文本*/
+.slh2{
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical;
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+
+
+
+/*三行文本*/
+.slh3{
+	-webkit-line-clamp:3;
+	-webkit-box-orient:vertical;
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+
+.slh4{
+	-webkit-line-clamp:4;
+	-webkit-box-orient:vertical;
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}

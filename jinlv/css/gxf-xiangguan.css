@@ -1,0 +1,237 @@
+@import url(base.css);
+header{
+	width: 100%;height: .88rem;
+	background: #3B67FA;
+}
+/*导航*/
+.gxf-fanhui{
+	width: .5rem;height: .5rem;
+	float: left;
+	margin-top: .2rem;
+	margin-left: .24rem
+}
+.gxf-fanhui img{
+	width: .42rem;
+	float: left;
+}
+.gxf-inbox{
+	width: 4.11rem;height: .45rem;
+	border:0px;
+	display: inline-block;
+	margin:0 auto;
+	margin-left: 0.95rem;
+	padding:0 .1rem;
+	border-radius: .3rem;
+	background: #5179FA;float: left;
+	margin-top: .21rem;
+}
+.gxf-sousuo{
+	float: left;
+	width: .27rem;height: .41rem;
+}
+.gxf-sousuo img{
+	width: 100%;
+	float: left;
+	margin-top: .1rem;
+}
+.gxf-inbox input{
+	float: left;
+	width: 3.5rem;height: .42rem;
+	background: #5179FA;
+	border:0px;
+	padding:0 .1rem; 
+	box-sizing:border-box;
+}
+/*中间*/
+.gxf-xianguan-article{
+	width: 100%;height: auto;
+	box-sizing:border-box;
+	padding:0 .32rem;
+}
+.gxf-xianguan-article p{
+	color: #363636;
+	font-size: .3rem;
+	font-weight: bold;
+	text-shadow:.02rem .02rem .02rem black;   
+	margin-top: .12rem;
+	display:inline-block;
+}
+.gxf-mudi{
+	width: 100%;height: auto;
+}
+.gxf-mudi-imgbox{
+	width: 100%;height: auto;
+	margin-top: .25rem;
+	display: flex;
+	justify-content:space-between;
+}
+.gxf-mudi-img1,.gxf-mudi-img3,.gxf-mudi-img2,.gxf-mudi-img4,.gxf-mudi-img5,.gxf-mudi-img6{
+	width: 2.15rem;height: 1.92rem;
+	background: url(../images/gxf-4.png);
+	background-size:100%;
+	border-radius: .2rem;
+	color:white;
+	font-size: .26rem;
+	font-weight: bold;
+	line-height: 2.3rem;text-align: center;
+	display: inline-block;
+}
+.gxf-mudi-img2{
+	background: url(../images/gxf-5.png);
+	background-size:100%;
+}
+.gxf-mudi-img3{
+	background: url(../images/gxf-6.png);
+	background-size:100%;
+}
+.gxf-mudi-img4{
+	background: url(../images/gxf-7.png);
+	background-size:100%;
+}
+.gxf-mudi-img5{
+	background: url(../images/gxf-8.png);
+	background-size:100%;
+}
+.gxf-mudi-img6{
+	background: url(../images/gxf-9.png);
+	background-size:100%;
+}
+/*下半部分*/
+.gxf-biaoti{
+	width: 100%;height: auto;
+}
+.gxf-you{
+	width: 1.25rem;height: .45rem;
+	float: right;
+	margin-top: .13rem;
+}
+.gxf-you img{
+	height: 100%;
+}
+.gxf-you1{
+	width: 1.25rem;
+	float: right;
+	margin-top: .6rem;
+}
+.gxf-you1 img{
+	float: left;
+	height: 100%;
+}
+.gxf-youjibox1,.gxf-youjibox2{
+	width: 100%;height: 2.22rem;
+	background: red;
+	margin-top: .25rem;
+	border-radius: .2rem;
+	background: url(../images/gxf-11.png);
+	background-size:100%;
+	position: relative;
+}
+/*闹钟*/
+.gxf-youji-naozhong{
+	position: absolute;
+	top:.63rem;left:.25rem;
+	width: .2rem;
+}
+/*眼睛*/
+.gxf-youji-yanjing{
+	position: absolute;
+	bottom:.23rem;left:.2rem;
+	width: .35rem;
+}
+/*心*/
+.gxf-youji-xin{
+	position: absolute;
+	bottom:.18rem;left:1.22rem;
+	width: .3rem;
+}
+/*信息*/
+.gxf-youji-xinxi{
+	position: absolute;
+	bottom:.15rem;left:2.34rem;
+	width: .3rem;
+}
+.gxf-youji-s0{
+	font-size: .26rem;
+	color:#DFE3EA;
+	position: absolute;
+	top:.2rem;
+	left:.2rem;
+}
+.gxf-youji-s1{
+	font-size: .2rem;
+	color:#D9DBE5;
+	position: absolute;
+	top:.58rem;
+	left:.5rem;
+}
+.gxf-youji-s2{
+	position: absolute;
+	bottom:.15rem;left:.6rem;
+	font-size: .22rem;
+	color:#d9dbe5;
+}
+.gxf-youji-s3{
+	position: absolute;
+	bottom:.14rem;left:1.55rem;
+	font-size: .22rem;
+	color:#d9dbe5;
+}
+.gxf-youji-s4{
+	position: absolute;
+	bottom:.14rem;left:2.7rem;
+	font-size: .22rem;
+	color:#d9dbe5;
+}
+.gxf-youjibox2{
+	background-size:100%;
+}
+.gxf-youji-img{
+	width: 100%;
+}
+
+
+
+/***************************最地面*/
+
+.gxf-chuanyue{
+	width: 100%;height: .75rem;
+	box-shadow: 0 0 .05rem .05rem #eee;
+	margin-top: .2rem;
+	padding:.14rem .11rem;
+	box-sizing:border-box;
+	border-radius: .1rem;
+}
+.gxf-chuanyue-touxiang{
+	width: .5rem;height: .5rem;
+	border-radius: 50%;
+	box-shadow: 0 0 .05rem .05rem #F2F7FF;
+	float: left;
+}
+.gxf-chuanyue-touxiang img{
+	width: 90%;float: left;
+	margin:0 auto;
+	margin-top: 5%;
+}
+.gxf-chuanyue-wenzi{
+	width: 3rem;height: 100%;
+	float: left;
+	padding: 0;
+	margin-left: .2rem;
+	position:relative;
+	margin-bottom: .2rem;
+}
+.gxf-chuanyue-wenzi span{
+	color:#363636;
+	font-size: .2rem;
+	float: left;
+	margin:0;
+	position: absolute;
+	top: -.05rem;
+}
+.gxf-chuanyue-wenzi p{
+	color:#858585;
+	font-size: .2rem;
+	position: absolute;
+	bottom:-.15rem;
+	text-shadow:none;
+}

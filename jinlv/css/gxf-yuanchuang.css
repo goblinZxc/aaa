@@ -1,0 +1,180 @@
+@import url(base.css);
+header{
+	width: 100%;height: .88rem;
+	background: #3B67FA;
+}
+body{
+	overflow: hidden;
+}
+p{
+	font-size: 0.2rem;
+}
+/*导航*/
+.gxf-header1{
+	justify-content:space-between;
+	display:flex;
+}
+.gxf-fanhui{
+	width: .5rem;height: .5rem;
+	float: left;
+	margin-top: .2rem;
+	margin-left: .24rem
+}
+.gxf-fanhui img{
+	width:.48rem;
+	float: left;
+}
+.gxf-inbox{
+	width: 4rem;height: .45rem;
+	border:0px;
+	padding:0 .1rem;
+	float: left;
+	margin-top: .20rem;
+	position: relative;
+	margin-left: .5rem;
+	box-sizing:border-box;
+}
+.gxf-inbox img{
+	width: .9rem;
+	float: left;
+	margin-top: .18rem;
+}
+.gxf-inbox span{
+	font-size: .33rem;
+	float: left;
+	color:#FFFFFF;
+	line-height: .55rem;
+	margin-right: 0.1rem;
+	margin-left: 0.1rem;
+}
+.gxf-sousuo{
+	float: left;
+	width: .27rem;height: .41rem;
+}
+.gxf-sousuo img{
+	width: 100%;
+	float: left;
+	margin-top: .1rem;
+}
+.gxf-quxiao{
+	width: .4rem;height: .4rem;
+	margin-right: .5rem;
+}
+.gxf-quxiao img{
+	float: left;
+	width: .42rem;
+	margin:0.23rem;
+}
+
+/*                      中间*/
+.gxf-yuanchuang{
+	width: 100%;height: 13.2rem;
+	background: url(../images/gxf-yuanchuang.png);
+	background-size: 100%;
+	position: relative;
+
+}
+.gxf-yuan-beijing{
+	width: 5.15rem;height: 8.75rem;
+	position: absolute;
+	left: 0;right: 0;
+	margin:0 auto;
+	margin-top: .55rem;
+	background: #A6B8F5;
+	border-radius: .2rem;
+}
+.gxf-jingcai-lunbobox{
+	width: 100%;
+	position: absolute;
+	top:.75rem;
+	/*background: red;*/
+
+}
+.swiper-container {
+    width: 100%;
+    height: auto;
+    margin:0 auto;
+    /*background: green;*/
+}
+.gxf-yuan-tu{
+	width: 5.55rem !important;height: 8.4rem;
+	margin-right:.4rem;
+	margin-left:1.55rem;
+	position: relative;
+	font-size: .19rem;
+	color:#D0D1CE;
+}
+.gxf-yuan-tu:nth-child(1){
+	margin-left:1rem;
+}
+.gxf-jingcaiyuanchuang-lunbo{
+	width: 100%;
+}
+.gxf-yuanchuang-p1{
+	position: absolute;
+	left:.65rem;bottom:.9rem;
+}
+.gxf-jingcaiyuanchuang-lunbo{
+	height: 100%;float: left;
+}
+/*眼睛*/
+.gxf-yuanchuang-yanjing{
+	width: .3rem;height: .17rem;
+	position: absolute;
+	left:.3rem;top:7.2rem;
+}
+
+/*星星*/
+.gxf-yuanchuang-xing{
+	width: .2rem;height: .2rem;
+	position: absolute;
+	left:1.15rem;top:7.2rem;
+}
+.gxf-yuanchuang-p2{
+	position: absolute;
+	left:1.35rem;bottom:.9rem;
+
+}
+/*消息*/
+.gxf-yuanchuang-xiaoxi{
+	width: .2rem;height: .2rem;
+	position: absolute;
+	left:1.7rem;top:7.2rem;
+}
+.gxf-yuanchuang-p3{
+	position: absolute;
+	left:1.98rem;bottom:.9rem;
+	font-size: 0.2rem;
+}
+
+
+.gxf-yuan-tu3{
+	width: 5.55rem;height: 8.4rem;
+	float: left;
+	background: url(../images/gxf-yuanchuang2.png);
+	background-size: 100%;
+}
+.gxf-yuan-tu4{
+	width: 2.85rem;height: .75rem;
+	position: absolute;
+	left: 0;right: 0;
+	margin:0 auto;
+	background: url(../images/gxf-yuanchuang5.png);
+	background-size: 100%;
+	text-align: center;
+	line-height: .8rem;
+	font-size: .23rem;
+	color:white;
+	font-weight: bold;
+	overflow: hidden;
+}
+@media screen and (min-width: 320px){
+	.gxf-yuan-tu4{
+		top:10.2rem;
+	}
+}
+@media screen and (max-width: 320px){
+	.gxf-yuan-tu4{
+		top:9.45rem;
+	}
+}

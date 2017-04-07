@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>活动详情</title>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0"/>
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <script src="js/rem.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/zq-huodongxiangqing.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/zepto.min.js"></script>
+    <script src="js/touch-0.2.14.min.js"></script>
+</head>
+<style>
+    .swiper-container {
+        width: 100%;
+        height: 4.03rem;
+        margin: 1.18rem auto 0.3rem;
+        position: relative;
+    }
+    .swiper-slide {
+        width: 6.32rem;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .swiper-container .zq-bgimg {
+        width: 5.96rem;
+        height: 4.03rem;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -2.98rem;
+        background: #3867FA;
+        border-radius: 0.2rem;
+    }
+    /*.swiper-slide a img{*/
+        /*width:100%:*/
+    /*}*/
+</style>
+<body>
+<!--$头部开始-->
+<div class="gzh-header">
+        <div class="gzh-header-left">
+            <a href="zq-morefun.html">
+                <img src="images/zq-out1.png" alt="">
+            </a>
+        </div>
+        <div class="gzh-header-center">
+            <a href="">
+                <img src="images/cn-16.png" alt="">
+                <h1>活动详情</h1>
+                <img src="images/cn-17.png" alt="">
+            </a>
+            
+        </div>
+        <div class="gzh-header-right">
+            <a href="">
+                <img src="images/zq-ser.png" alt="">
+            </a>
+        </div>
+    </div>
+<!--$头部结束-->
+<!--$banner图开始-->
+<div class="swiper-container">
+    <div class="zq-bgimg"></div>
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/zq-banner-1.png" alt="" style="width:100%;"></div>
+        <div class="swiper-slide"><img src="images/zq-banner-1.png" alt="" style="width:100%;"></div>
+        <div class="swiper-slide"><img src="images/zq-banner-1.png" alt="" style="width:100%;"></div>
+    </div>
+</div>
+<!--$banner图结束-->
+<!--$内容开始-->
+<div class="zq-content">
+    <h3 class="title">运城潜水旅行</h3>
+    <p class="jj">城市沿海而建，商店、食肆林立、而且交通便利，是体验菲律宾风土人情的好地方。</p>
+    <span class="rmb">RMB 5680.00</span>
+    <table>
+        <tr id="zq-riqi">
+            <td>出行日期</td>
+            <td>
+                <span class="ty" href="">
+                    10.22
+                </span>
+            </td>
+            <td>
+                <span class="ty active" >
+                    10.22
+                </span>
+            </td>
+            <td>
+                <span class="ty" >
+                    10.22
+                </span>
+            </td>
+        </tr>
+        <tr id="zq-didian">
+            <td>聚合地点</td>
+            <td>
+                <span class="ty active" >
+                    福州-福建
+                </span>
+            </td>
+            <td>
+                <span class="ty" >
+                    福州-福建
+                </span>
+            </td>
+        </tr>
+        <tr id="zq-mudi">
+            <td>目的地点</td>
+            <td class="td">菲律宾</td>
+        </tr>
+        <tr>
+            <td>出行人数</td>
+            <td>
+                <div class="zjs">
+                    <span id="zq-pre">-</span>
+                    <input type="text" value="1" id="zq-num">
+                    <span id="zq-add">+</span>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+<!--$内容结束-->
+<!--$底部开始-->
+<footer class="foot">
+    <div class="foot-left">
+        <span>RMB 5680.00</span>
+        <a href="" class="cst"></a>
+        <a href="" class="sc">收藏</a>
+    </div>
+    <div class="foot-right">
+        <a href="" class="xf"></a>
+        <a href="zq-pay.html" class="ljgm">立即购买</a>
+    </div>
+</footer>
+<!--$底部结束-->
+</body>
+<script src="js/swiper.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        spaceBetween: 15,
+        grabCursor: true
+    });
+        var add = document.querySelector("#zq-add");
+        var pre = document.querySelector("#zq-pre");
+        var inpnum = document.querySelector("#zq-num");
+        var num = 1;
+        console.dir(inpnum)
+    console.log(inpnum.value)
+//   出行人数 ++ --效果
+    touch.on(add,"touchstart",function(){
+            num++;
+            inpnum.value=num;
+        })
+    touch.on(pre,"touchstart",function(){
+        num--;
+        if(num==0){
+            num=1;
+        }
+        inpnum.value=num;
+    })
+//    出行日期点击效果
+        var riqity = $("#zq-riqi .ty");
+        var didianty = $("#zq-didian .ty");
+        var mudity = $("#zq-mudi .td");
+        for(var i = 0;i<riqity.length;i++){
+            riqity[i].addEventListener('touchstart', function () {
+                riqity.removeClass("active");
+                $(this).addClass("active" );
+            });
+        }
+    for(var i = 0;i<didianty.length;i++){
+        didianty[i].addEventListener('touchstart', function () {
+            didianty.removeClass("active");
+            $(this).addClass("active" );
+        });
+    }
+</script>
+</html>

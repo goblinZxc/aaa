@@ -1,0 +1,64 @@
+body{
+	background: url(../images/zwb-bj.jpg);
+    background-size:100%;
+    	 font-family:"Æ»·½";
+}
+.zwb-head{
+	width: 100%;
+	height: 0.88rem;
+	display:flex;
+	justify-content:space-between;
+	padding:0 0.2rem;
+	box-sizing:border-box;
+	align-items:center;
+}
+.zwb-head img{
+	width: 0.42rem;
+	height: 0.42rem;
+	float: left;
+}
+.zwb-wbxc{
+	color: #fff;
+	font-size: 0.36rem;
+	
+}
+.zwb-wc{
+	color: #fff;
+	font-size: 0.36rem;
+	float: right;
+}
+.zwb-xc{
+	width: 100%;
+    box-sizing: border-box;
+}
+.zwb-xc li {
+	width: 100%;
+	padding: 0rem 0.21rem;
+    box-sizing: border-box;
+	display: flex;
+	align-items:center;
+	justify-content: space-between;
+
+
+
+}
+.zwb-xc li div img{
+	width: 3.29rem;
+	height: 3.29rem;
+}
+.zwb-ha{
+	position: relative;
+}
+.zwb-xc li div .zwb-ldg{
+	width: 0.24rem;
+	height: 0.24rem;
+	position: absolute;
+	right: 0.1rem;top:0.1rem;
+}
+.zwb-xc li div p{
+	position: absolute;
+	font-size: 0.25rem;
+	color: #fff;
+	left: 0.19rem;
+	bottom:0.3rem;
+}

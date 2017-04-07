@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <script src="js/rem.js"></script>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/lhl.css">
+    <script src="js/swiper.min.js"></script>
+</head>
+<body>
+<div class="swiper-container lhl-container">
+    <!--闪屏-->
+    <div class="swiper-wrapper lhl-splash">
+        <div class="swiper-slide lhl-splash-lis">
+            <a href="lhl-splash1.html" class="lhl-sptz"></a>
+            <img src="images/lhl-sp1.png" alt="">
+        </div>
+        <div class="swiper-slide lhl-splash-lis">
+            <a href="lhl-splash2.html" class="lhl-sptz"></a>
+            <img src="images/lhl-sp2.png" alt="">
+        </div>
+        <div class="swiper-slide lhl-splash-lis">
+            <img src="images/lhl-sp3.png" alt="">
+            <a href="lhl-log-index.html" class="lhl-start"></a>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <!--按钮-->
+    <!-- <ul class="lhl-btn">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+    </ul> -->
+</div>
+<script>        
+var mySwiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: '.swiper-pagination',
+        spaceBetween: 30,
+        effect: 'fade',
+        pagination : '.swiper-pagination',
+        loop : true,
+        loopAdditionalSlides : 1
+}) 
+  </script>
+</body>
+</html>

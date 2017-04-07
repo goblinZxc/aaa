@@ -1,0 +1,214 @@
+*{
+	box-sizing:border-box;
+}
+i{
+	font-style: normal;
+}
+/*头部开始*/
+.gzh-header{
+	width: 100%;
+	height: 0.88rem;
+	background: #3867FA;
+	display: flex;
+	padding:0.2rem;
+	justify-content:space-between;
+	align-items:center;
+}
+.gzh-header .gzh-header-left{
+	padding-left:0.12rem;
+}
+.gzh-header .gzh-header-left>a{
+	display: flex;
+	align-items:center;
+}
+.gzh-header .gzh-header-left img{
+	height: 0.4rem;
+}
+
+.gzh-header .gzh-header-center>a{
+	display: flex;
+	align-items:center;
+}
+.gzh-header .gzh-header-center img{
+	width: 0.9rem;
+}
+.gzh-header .gzh-header-center a>h1{
+	font-size: 0.36rem;
+	padding:0 0.12rem;
+	color: #FFFFFF;
+}
+.gzh-header .gzh-header-center a>img{
+	margin-top: 0.12rem;
+	vertical-align: middle;
+}
+.gzh-header .gzh-header-right{
+	padding-right:0.12rem;
+}
+.gzh-header .gzh-header-right a{
+	display: flex;
+	align-items:center;
+}
+.gzh-header-right img{
+	height: 0.54rem;
+	margin-top: 0.15rem;
+}
+/*头部结束*/
+/*banner开始*/
+.gzh-bannerbox{
+	width: 100%;
+	height: 3.4rem;
+	border-top:1px solid #928884;
+	border-bottom:1px solid #928884;
+	background: url(../images/gzh-banner1.png)no-repeat center center/cover;
+}
+.gzh-bannerbox .gzh-banner{
+	width: 3.8rem;
+	height: 100%;
+	margin:0 auto;
+}
+.gzh-banner .gzh-banner-top{
+	width: 100%;
+	height: 2.4rem;
+	padding-top:0.6rem;
+	display: flex;
+	justify-content:space-between;
+}
+.gzh-banner-top .gzh-topl>a{
+	display: flex;
+	justify-content:center;
+	flex-direction:column;
+}
+ .gzh-banner-top .gzh-topl>a>span{
+	font-size: 0.24rem;
+	color: #ffffff;
+	margin-bottom: 0.1rem;
+}
+ .gzh-banner-top .gzh-topl>a>img{
+	width: 0.54rem;
+}
+.gzh-banner-top .gzh-topc{
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+	text-align: center;
+	margin-bottom: 0.5rem;
+}
+.gzh-banner-top .gzh-topc>a{
+	display: block;
+}
+.gzh-banner-top .gzh-topc>a>img{
+	width: 1.4rem;
+}
+.gzh-banner-top .gzh-topc>span{
+	font-size: 0.26rem;
+	color: #FFFFFF;
+}
+.gzh-banner-top .gzh-topr>a{
+	display: flex;
+	justify-content:center;
+	flex-direction:column;
+}
+.gzh-banner-top .gzh-topr>a>span{
+	font-size: 0.24rem;
+	color: #ffffff;
+	margin-bottom: 0.1rem;
+}
+.gzh-banner-top .gzh-topr>a>img{
+	width: 0.54rem;
+}
+/*banner下面关注/私信*/
+.gzh-banner-down{
+	width:100%;
+	height:1rem;
+	display: flex;
+	justify-content:space-between;
+}
+.gzh-banner-down>a{
+	display: block;
+	width: 1.64rem;
+	height: 0.44rem;
+	background: #FFFFFF;
+	border-radius: 0.2rem;
+	text-align: center;
+	padding:0.05rem;
+	font-size: 0px;
+}
+.gzh-banner-down>a>img{
+	width: 0.28rem;
+	vertical-align: middle;
+	margin-right: 0.1rem;
+}
+.gzh-banner-down>a>span{
+	font-size: 0.24rem;
+	vertical-align: middle;
+	color: #7495FB;
+}
+
+/*banner结束*/
+/*内容开始*/
+.gzh-inner{
+	width: 100%;
+	height:auto;
+	padding:0 0.32rem;
+}
+.gzh-inner>h1{
+	font-size: 0.28rem;
+	text-align: center;
+	padding:0.33rem 0 0.37rem 0;
+}
+.gzh-inner .gzh-innerlist{
+	width: 100%;
+	height: 3.12rem;
+	border-radius: 0.1rem;
+	background: #CCC;
+	margin-bottom: 0.24rem;
+}
+.gzh-inner li:nth-child(1){
+	background: url(../images/gzh-li1.png)no-repeat center center/cover;
+}
+.gzh-inner li:nth-child(2){
+	background: url(../images/gzh-li2.png)no-repeat center center/cover;
+}
+.gzh-inner li:nth-child(3){
+	background: url(../images/gzh-li3.png)no-repeat center center/cover;
+}
+
+.gzh-innerlist .gzh-list-top{
+	width: 100%;
+	height: 1rem;
+	padding:0.38rem 0.2rem;
+	font-size: 
+}
+.gzh-innerlist .gzh-list-top>span{
+	display: block;
+	font-size: 0.28rem;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+.gzh-innerlist .gzh-list-top>span>img{
+	width: 0.28rem;
+	vertical-align: middle;
+}
+.gzh-innerlist .gzh-list-top>span:nth-child(2){
+	margin-top: 0.1rem;
+}
+
+/*图片下面*/
+.gzh-innerlist .gzh-list-down{
+	width: 100%;
+	height: 0.8rem;
+	margin-top: 1.2rem;
+	display: flex;
+	align-items:center;
+	padding-left: 0.2rem;
+}
+.gzh-innerlist .gzh-list-down a>span{
+	font-size: 0.24rem;
+	color: #FFFFFF;
+	vertical-align: middle;
+}
+.gzh-innerlist .gzh-list-down a>img{
+	width: 0.3rem;
+	vertical-align: middle;
+}
+ /*游记故事集结束*/

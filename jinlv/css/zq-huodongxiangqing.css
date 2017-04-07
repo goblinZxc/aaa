@@ -1,0 +1,206 @@
+/*$头部开始*/
+/*a{*/
+    /*color:#333;*/
+/*}*/
+*{
+    box-sizing:border-box;
+}
+.gzh-header{
+    width: 100%;
+    height: 0.88rem;
+    background: #3867FA;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0.2rem;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 99999;
+}
+.gzh-header-left.active{
+    width: 0.42rem;
+    height: 0.42rem;
+    border-radius: 50%;
+    box-shadow: 0 0.05rem 0.1rem 0.02rem #1D45C5;
+}
+.gzh-header .gzh-header-left>a{
+    display: flex;
+    align-items:center;
+}
+.gzh-header .gzh-header-left img{
+    width: 0.5rem;
+    margin-top: 0.2rem;
+}
+.gzh-header .gzh-header-center.active{
+    margin-left: 1rem;
+}
+.gzh-header .gzh-header-center img{
+    width: 0.8rem;
+}
+.gzh-header .gzh-header-center>a{
+    display: flex;
+    align-items:center;
+}
+.gzh-header .gzh-header-center a>h1{
+    font-size: 0.36rem;
+    padding:0 0.12rem;
+    color: #FFFFFF;
+}
+.gzh-header .gzh-header-center a>img{
+    margin-top: 0.12rem;
+    vertical-align: middle;
+}
+.gzh-header .gzh-header-right{
+    width: 0.42rem;
+    height: 0.42rem;
+    border-radius: 50%;
+    box-shadow: 0 0.05rem 0.1rem 0.02rem #1D45C5;
+}
+.gzh-header .gzh-header-right>a{
+    display: flex;
+    align-items:center;
+}
+.gzh-header .gzh-header-right>a>img{
+    width: 0.42rem;
+}
+/*$头部结束*/
+/*$banner图开始*/
+
+
+/*$banner图结束*/
+/*$内容开始*/
+.zq-content{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0.32rem 1.3rem;
+    height: auto;
+}
+.zq-content .title{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.1rem;
+}
+.zq-content .jj{
+    font-size: 14px;
+    color: #666;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;
+    margin-bottom: 0.2rem;
+}
+.zq-content .rmb{
+    font-size: 18px;
+    color: #ff3535;
+    font-weight: bold;
+}
+.zq-content table tr{
+   height: 0.8rem;
+    font-size: 12px;
+}
+.zq-content table tr>td{
+    text-align: center;
+    white-space: nowrap;
+}
+.zq-content table tr .ty{
+    display: block;
+    width: 1.73rem;
+    height: 0.73rem;
+    line-height:0.73rem;
+    text-align: center;
+    font-size: 12px;
+    background: url(../images/zq-bg-3.png)no-repeat center center/cover;
+}
+ span.active{
+    color:#2963f4;
+}
+.zq-content table tr .zjs{
+    width: 1.85rem;
+    height: 0.55rem;
+    background: url(../images/zq-bg-4.png)no-repeat center center/cover;
+}
+.zq-content table tr .zjs input{
+    width: 0.75rem;
+    height: 0.4rem;
+    border: none;
+    font-size: 12px;
+    margin-top: 0.02rem;
+    text-align: center;
+    padding-top: 0.15rem;
+    box-sizing:border-box;
+}
+.zq-content table tr .zjs span{
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.5rem;
+}
+/*$内容结束*/
+/*$底部开始*/
+.foot{
+    width: 100%;
+    height: 1.1rem;
+    background: #223443;
+    margin-top: 0.3rem;
+    box-sizing: border-box;
+    line-height: 1.1rem;
+    position: fixed;
+    bottom:0;
+    left:0;
+    z-index: 99999;
+}
+.foot-left{
+    float: left;
+    width: 60%;
+    height: 100%;
+    position: relative;
+}
+.foot-left span{
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    padding-left: 0.32rem;
+}
+.foot-left>.sc{
+    float: right;
+    padding-right: 0.4rem;
+    font-size: 0.24rem;
+    color: #fff;
+}
+.foot-left>.cst{
+    display: block;
+    position: absolute;
+    top: 0.2rem;
+    left: 2.5rem;
+    width: 0.72rem;
+    height: 0.72rem;
+    background: url(../images/zq-shou.png)no-repeat center center/cover;
+}
+.foot-right{
+    float: right;
+    width: 40%;
+    height: 100%;
+    background: #3867fa;
+    padding-right: 0.32rem;
+    box-sizing: border-box;
+    position: relative;
+}
+.foot-right>.ljgm{
+    font-size: 14px;
+    color: #fff;
+    float: right;
+    padding-right: 0.32rem;
+}
+.foot-right>.xf{
+    width: 0.29rem;
+    height: 0.29rem;
+    background: url(../images/zq-ablum.png)no-repeat center center/cover;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.4rem;
+}
+/*$底部结束*/
+
+

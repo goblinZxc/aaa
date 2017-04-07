@@ -1,0 +1,222 @@
+/*头部*/
+.cn-top{
+    width: 100%;
+    height: 0.88rem;
+    background: #3867FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cn-content{
+    width:7rem;
+    height:0.45rem;
+    /*background: red;*/
+}
+.cn-an{
+    display: flex;
+    height: 0.44rem;
+    width: 0.44rem;
+    float: left;
+    /*margin-top: 0.05rem;*/
+    border-radius: 50%;
+    box-shadow:0 0.05rem 0.01rem #1F48CD
+;
+}
+.cn-an img{
+    width: 100%;
+}
+.cn-zhong{
+    width: 2.85rem;
+    height:100%;
+    margin-left:1.7rem;
+    float: left;
+    /*background: blue;*/
+    display: flex;
+    justify-content: space-between;
+}
+.cn-tl{
+    width: 0.45rem;
+    height: 100%;
+    background:url("../images/cn-16.png")no-repeat center center/100% ;
+}
+
+.cn-zhong p{
+    height: 100%;
+    line-height:0.45rem ;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*内容*/
+
+.cn-go{
+    width: 6.82rem;
+    height: 0.6rem;
+    margin: 0.22rem auto 0;
+    /*background: red;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cn-go-yi{
+    width: 2.06rem;
+    height:0.43rem;
+    background: #3663F1;
+    border-radius: 0.1rem;
+    position: relative;
+}
+.cn-go-yi1{
+    position: absolute;
+    left:50%;
+    margin-left: -0.95rem;
+    top:-0.095rem;
+    z-index: 2;
+    width: 1.9rem;
+    height: 0.6rem;
+    background: #fff;
+    border-radius: 0.05rem;
+    box-shadow:0 0 0.1rem 0.03rem  #EDEDED;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+
+}
+.cn-go-yi1 span {
+    font-size: 12px;
+    color: #151515;
+    font-weight: bold;
+    margin-left: 0.34rem;
+}
+.cn-go-er{
+    width: 2rem;
+    height: 0.6rem;
+    background: #fff;
+    border-radius: 0.1rem;
+    display: flex;
+    box-shadow:0 0 0.1rem 0.03rem  #EDEDED;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+}
+.cn-rili{
+    width: 0.24rem;
+    height: 0.24rem;
+    display: flex;
+}
+.cn-rili img{
+    width: 100%;
+}
+.cn-go-er span:nth-child(2){
+    font-size: 10px;
+    color: #3867FA;
+}
+.cn-go-er span:nth-child(3){
+    font-size: 12px;
+    color: #3867FA;
+}
+.cn-go-xia{
+    width: 0.13rem;
+    height: 0.08rem;
+    display: flex;
+}
+.cn-go-xia img{
+    width: 100%;
+}
+
+.cn-go-anniu{
+    width: 0.11rem;
+    height: 0.17rem;
+    display: flex;
+    margin-left: 0.27rem;
+}
+.cn-go-anniu img{
+    width: 100%;
+}
+/*北京到上海*/
+.cn-go-fei{
+    width: 6.83rem;
+    height: 2.4rem;
+    margin: 0.34rem auto 0;
+    display: flex;
+    background: url("../images/cn123.png")no-repeat center center/100%;
+}
+.cn-go-fei-lt{
+    width:2.14rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 0 0 auto;
+}
+.cn-go-fei-lt span{
+    font-size: 12px;
+    color: #fff;
+}
+.cn-xian{
+    width: 1.3rem;
+    height: 0.02rem;
+    display: flex;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+.cn-xian img {
+    width: 100%;
+}
+.cn-go-fei-rt{
+    flex: 1 0 auto;
+}
+.cn-go-fei-r1{
+    width: 100%;
+    height:25%;
+    /*background: red;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cn-go-fei-r1 span {
+    color:#1C1C1C ;
+    font-size: 14px;
+    font-weight: bold;
+}
+.fire{
+    width: 1.4rem;
+    height: 0.4rem;
+    display: flex;
+    margin-left: 0.27rem;
+
+}
+.fire img {
+    width: 100%;
+}
+.cn-wdx{
+    width:4.16rem;
+    height: 0.02rem;
+    display: flex;
+    margin:0 auto ;
+}
+.cn-wdx img{
+    width: 100%;
+}
+
+.cn-zkdi{
+    width: 100%;
+    height: 0.9rem;
+    position: fixed;
+    left:0;
+    bottom:0;
+    background:#003EFF ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cn-zzan{
+    width: 0.44rem;
+    height: 0.57rem;
+    display: flex;
+}
+.cn-zzan img{
+    width: 100%;
+}

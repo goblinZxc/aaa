@@ -1,0 +1,260 @@
+body{
+	background: #F5F5F5;
+	 font-family:"苹方";
+}
+.topbar5{
+	height: .88rem;
+	width: 100%;
+	background: #3867FA;
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	align-items:center;
+	justify-content:space-between;
+}
+.topbar5 .l{
+	margin-left: .23rem;
+	/*margin-top: .21rem;*/
+	width: .46rem;
+	height: .46rem;
+	background: url(../images/2.png) center center/cover no-repeat;
+}
+.topbar5 .r{
+	margin-right: .23rem;
+	/*margin-top: .21rem;*/
+	width: .46rem;
+	height: .46rem;
+}
+.topbar5 .m{
+	width: 4rem;
+	height: .52rem;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+.topbar5 .m .s1{
+	width:.64rem;
+	height: .42rem;
+	background: url(../images/l.png) center center/cover no-repeat;
+}
+.topbar5 .m .s2{
+	font-size:.4rem ;
+	color: #fff;
+	font-weight: 700;
+}
+.topbar5 .m .s3{
+	width:.61rem;
+	height: .42rem;
+	background: url(../images/m.png) center center/cover no-repeat;
+}
+.topbar5 .m .s4{
+	font-size:.4rem ;
+	color: #fff;
+	font-weight: 700;
+}
+.topbar5 .m .s5{
+	width:.51rem;
+	height: .42rem;
+	background: url(../images/r.png) center center/cover no-repeat;
+}
+.zq-top{
+	height: 0.88rem;
+	width: 100%;
+	background: #999;
+}
+.zq-qc{
+	width: 7em;
+	height: 2.45rem;
+	margin: 0 auto;
+	margin-top:0.24rem;
+	background: url(../zq-images/zq-bg.png) ;
+	background-size: 100%;
+
+}
+.zq-zi1{
+	width: 100%;
+	height: 0.62rem;
+	/*background: #eee;*/
+	 	box-sizing: border-box;
+	display: flex;
+	align-items:center;
+	justify-content: space-between;
+	padding: 0.2rem
+
+
+}
+.zq-xx{
+	width:6.8rem;
+	height:0.01rem;
+	border:none;
+	border-top:0.05rem dashed #E6E6E6;
+	position: absolute;
+	top: 1.3rem;
+	left: 0.35rem;
+
+}
+div.zq-zi1 span{
+	float: left;
+	font-size: 0.24rem;
+
+}
+
+.zq-zi2{
+	width: 5rem;
+	height: 1.16rem;
+	/*background: #eee;*/
+	/*margin-top: -0.6rem;*/
+    display: flex;
+	align-items:center;
+	float: right;
+	/*justify-content: space-between;*/
+/*	padding: 0.2rem*/
+margin-right: 0.4rem;
+text-align: center;
+
+}
+.zq-zi2 p{
+	/*display:inline；*/
+	/*float: left;*/
+}
+.zq-zi2 img{
+	width: 2.22rem;
+	margin-top: 0.1rem;
+}
+.zq-zi22{
+	width: 5rem;
+	height: 0.8rem;
+}
+.zq-2h{
+	font-size: 0.24rem;
+	color: #eee;
+	position: absolute;
+    right: 3rem;
+}
+.zq-xian2{
+    position: absolute;
+    top: 2.3rem;
+    width: 6.72rem;
+    left: 0.4rem;
+}
+.zq-qt{
+    width: 5.12rem;
+    height: 0.67rem;
+/*    background: #eee;*/
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1.4rem;
+}
+.zq-qt span{
+		font-size: 0.24rem;
+}
+.zq-you{
+    font-size: 0.24em;
+    margin-left: -0.8rem;
+}
+.zq-xx2{
+	width:6.8rem;
+	height:0.01rem;
+	border:none;
+	border-top:0.05rem dashed #E6E6E6;
+	position: absolute;
+	top: 4rem;
+	left: 0.35rem;
+
+}
+.zq-xian3{
+    position: absolute;
+    top: 5rem;
+    width: 6.72rem;
+    left: 0.4rem;
+}
+.zq-xz{
+    width: 2.16rem;
+    height: 0.53rem;
+    font-size: 0.24em;
+    color: #3B67FA;
+    line-height: 0.8rem;
+    margin-left: 0.1rem;
+}
+.zq-dp1{
+	width: 7.04rem;
+	height: 1.65rem;
+	background: url(../zq-images/zq-jibg.png) ;
+	background-size: 100%;
+	    margin: 0 auto;
+    margin-top: 0.24rem;
+}
+.zq-tdc{
+	width: 3.6rem;
+	height: 0.94rem;
+	float: left;
+	/*background: #999;*/
+	font-size: 0.22rem;
+	color: #eee;
+}
+.zq-tdc_1{
+	padding: 0.1rem 0.1rem;
+}
+.zq-tdc_2{
+	    margin-left: 0.1rem;
+}
+.zq-tdc2{
+	width: 2.4rem;
+	height: 0.94rem;
+	float: right;
+	/*background: #999;*/
+	font-size: 0.22rem;
+}
+.zq-tdc22{
+	width: 0.77rem;
+	height: 0.77rem;
+	background: url(../zq-images/zq-dingbg.png) no-repeat;
+	background-size: 100%;
+	float: right;
+    margin-top: 0.18rem;
+    margin-right: 0.27rem;
+    text-align: center;
+        line-height: 0.37rem;
+}
+.zq-ding{
+	color: #fff;
+	font-size: 0.24rem;
+	margin-top: 0.1rem;
+}
+.zq-syz{
+	color: red;
+	font-size: 0.22rem;
+float: left;
+    margin-left: 0.08rem;
+}
+.zq-yhj{
+	width: 7rem;
+	height: 0.5rem;
+	float: left;
+
+}
+.zq-yhj img{
+    float: left;
+    margin-top: 0.3rem;
+    margin-left: 0.27rem;
+}
+.zq-yhj span{
+	font-size: 0.24rem;
+	float: left;
+	    margin-top: 0.3rem;
+	        margin-left: 0.1rem;
+}
+.zq-xia{
+font-size: 0.4rem;
+    float: right;
+    margin-right: 0.27rem;
+    margin-top: 0.33rem;
+    color: #eee;
+}
+.zq-mf{
+    margin-left: 0.1rem;
+}

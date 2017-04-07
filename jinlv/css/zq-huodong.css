@@ -1,0 +1,239 @@
+/*头部开始*/
+*{
+    box-sizing:border-box;
+}
+.gzh-header{
+    width: 100%;
+    height: 0.88rem;
+    background: #3867FA;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0.2rem;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 9999;
+}
+.gzh-header-left.active{
+    width: 0.42rem;
+    height: 0.42rem;
+    border-radius: 50%;
+    box-shadow: 0 0.05rem 0.1rem 0.02rem #1D45C5;
+}
+.gzh-header .gzh-header-left>a{
+    display: flex;
+    align-items:center;
+}
+.gzh-header .gzh-header-left img{
+    width: 0.42rem;
+}
+.gzh-header .gzh-header-center.active{
+    margin-left: 1rem;
+}
+.gzh-header .gzh-header-center img{
+    width: 0.9rem;
+}
+.gzh-header .gzh-header-center>a{
+    display: flex;
+    align-items:center;
+}
+.gzh-header .gzh-header-center a>h1{
+    font-size: 0.36rem;
+    padding:0 0.12rem;
+    color: #FFFFFF;
+}
+.gzh-header .gzh-header-center a>img{
+    margin-top: 0.12rem;
+    vertical-align: middle;
+}
+.gzh-header .gzh-header-right{
+    width: 0.42rem;
+    height: 0.42rem;
+    border-radius: 50%;
+    box-shadow: 0 0.05rem 0.1rem 0.02rem #1D45C5;
+}
+.gzh-header .gzh-header-right>a{
+    display: flex;
+    align-items:center;
+}
+.gzh-header .gzh-header-right>a>img{
+    width: 0.44rem;
+    height: 0.44rem;
+}
+/*头部结束*/
+/*标签开始*/
+.zq-nav{
+    width:7.12rem;
+    height:1.1rem;
+    margin:0.88rem auto 0;
+
+}
+.zq-nav .zq-box li{
+    width:1.33rem;
+    height:auto;
+    position: relative;
+    float: left;
+    margin-right:0.165rem;
+}
+.zq-nav .zq-box li img {
+    width:100%;
+    height:100%;
+}
+.zq-nav .zq-box li h5 {
+    font-size: 0.24rem;
+    text-align: center;
+    color:#333;
+    position: absolute;
+    top:0.23rem;
+    left:0.55rem;
+    font-weight: normal;
+}
+.zq-nav .zq-box li:last-child{
+    width:1.13rem;
+    margin:0;
+}
+.zq-nav .zq-box li.active h5{
+    color:#2963f4;
+}
+/*标签结束*/
+/*内容开始*/
+.zq-tag{
+    width:7.25rem;
+    height:auto;
+    margin-left:0.08rem;
+    transform: translate(0,-0.22rem);
+    /*margin-top:-0.22rem;*/
+}
+.zq-tag li{
+    width:100%;
+    height: 2.44rem;
+    position: relative;
+    margin-top:-0.2rem;
+}
+.zq-tag li:last-child{
+    margin-bottom: 0.9rem;
+}
+.zq-tag li a {
+    font-size: 0;
+}
+.zq-tag li a>img{
+    width:100%;
+    height: auto;
+}
+.zq-tag li a .left{
+    width:26.54%;
+    height:2.04rem;
+    position: absolute;
+    left:0.16rem;
+    top:0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.zq-tag li a .left img#xing{
+    width:1.33rem;
+    height:auto;
+}
+.zq-tag li a .left .zq-portbox{
+    width:1.14rem;
+    height:1.14rem;
+    border-radius: 50%;
+    background: #fff;
+    margin-bottom:0.15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -0.01rem  -0.01rem  0.5rem  0rem #0038d0 ;
+}
+.zq-tag li a .left .zq-portbox .zq-port{
+    width:1.1rem;
+    height:1.1rem;
+    border-radius:50% ;
+    background: url(../images/zq-port.png)no-repeat center center/cover;
+}
+.zq-tag li a .right {
+    width: 70%;
+    height: 2.04rem;
+    position: absolute;
+    top: 0.2rem;
+    right: 0.16rem;
+    /*background: #ccc;*/
+}
+.zq-tag li a .right>p{
+    width:4.6rem;
+    height: auto;
+    font-size:0.3rem;
+    margin:0.3rem auto 0;
+    color:#333;
+}
+.zq-tag li a .right .right-bottom{
+    width:4.6rem;
+    height: auto;
+    font-size: 0.24rem;
+    position: absolute;
+    bottom:0.33rem;
+    left:0.24rem;
+}
+.zq-tag li a .right .right-bottom .bottom-left{
+    float: left;
+    color:#999999;
+    display: flex;
+    align-items: center;
+}
+.zq-tag li a .right .right-bottom .bottom-left img {
+    margin-right:0.14rem;
+}
+.zq-tag li a .right .right-bottom .bottom-right{
+    float: right;
+    color: #ff1f45;
+}
+.zq-tag li a .right .right-bottom .bottom-right .jiage{
+    font-weight: bold;
+}
+.zq-tag li a .right .right-bottom .bottom-left img{
+    width:0.33rem;
+    height:0.33rem;
+}
+/*内容结束*/
+/*footer*/
+.lb-footer{
+    width: 100%;
+    height: 0.98rem;
+    background: #003eff;
+    position: fixed;
+    left:0;
+    bottom: 0;
+    z-index: 999;
+}
+.lb-footer a{
+    display: block;
+    float: left;
+    width: 20%;
+    padding: 0 0.44rem;
+    box-sizing: border-box;
+}
+.lb-footer a span{
+    display: block;
+    width: 0.64rem;
+    height: 0.67rem;
+    margin-top: 0.04rem;
+}
+.lb-footer a span img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.lb-footer a p{
+    display: block;
+    width: 100%;
+    height: 0.2rem;
+    line-height: 0.2rem;
+    font-size: 0.2rem;
+    text-align: center;
+    color: #fff;
+}
+
+/*底部结束*/

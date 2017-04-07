@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <script src="js/rem.js"></script>
+    <link rel="stylesheet" href="css/lhl.css">
+    <script src="js/zepto.min.js"></script>
+</head>
+<body>
+    <div class="lhl-bg"></div>
+    <div class="lhl-container">
+        <div class="lhl-hy">
+            <img src="images/lhl-hy.png" alt="">
+        </div>
+        <!--logo-->
+        <div class="lhl-logo">
+            <img src="images/lhl-logo.png" alt="">
+        </div>
+        <!--按钮-->
+        <ul class="lhl-loginbtn">
+            <li class="loginbtnlis">
+                <i class="lhl-left"></i>
+                <a href="lhl-login.html" class="lhl-zi">
+                    登录
+                </a>
+                <i class="lhl-right"></i>
+            </li>
+            <li class="loginbtnlis">
+                <i class="lhl-left"></i>
+                <a href="lhl-reg.html"  class="lhl-zi">
+                    注册
+                </a>
+                <i class="lhl-right"></i>
+            </li>
+        </ul>
+        <!--第三方登录-->
+        <div class="lhl-three">
+                <img src="images/lhl-btn.png" alt="">
+        </div>
+        <div class="lhl-link">
+            <a href="">
+                <img src="images/lhl-wb.png" alt="">
+            </a>
+            <a href="">
+                <img src="images/lhl-wx.png" alt="">
+            </a>
+            <a href="">
+                <img src="images/lhl-qq.png" alt="">
+            </a>
+        </div>
+    </div>
+</body>
+<script>
+    var loginbtnlis=document.getElementsByClassName("loginbtnlis");
+    var zi=document.getElementsByClassName("lhl-zi");
+
+    var right=document.getElementsByClassName("lhl-right");
+    var left=document.getElementsByClassName("lhl-left");
+    for (var i = 0; i < loginbtnlis.length; i++) {
+        loginbtnlis[i].aa=i;
+        loginbtnlis[i].onclick=function(){
+            zi[this.aa].style.color="#fff";
+            right[this.aa].style.background="#fff";
+            left[this.aa].style.background="#fff";
+            this.style.background="#ffd500";
+        }
+    };
+
+</script>
+</html>

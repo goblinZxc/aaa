@@ -1,0 +1,366 @@
+@import "base.css";
+
+
+.kx_mine_header{
+    width: 100%;
+    height: 0.88rem;
+    background: #3B67FA;
+    position: relative;
+}
+.kx_mine_header span{
+    box-shadow: 0 0.03rem 0.1rem #2036d4;
+}
+.kx_mine_header span a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.kx_mine_header .lb-header-left{
+    position: absolute;
+    left: 0;
+    top:50%;
+    margin-top: -0.24rem;
+    width: 0.42rem;
+    height: 0.42rem;
+    border-radius: 50%;
+    margin-left: 0.24rem;
+    background: url("../images/lb-back.png") no-repeat center center/cover;
+}
+.kx_mine_header .lb-header-right{
+    position: absolute;
+    right: 0;
+    top:50%;
+    margin-top: -0.24rem;
+    width: 0.42rem;
+    height: 0.42rem;
+    border-radius: 50%;
+    margin-right: 0.24rem;
+    background: url("../images/lb-search.png") no-repeat center center/cover;
+}
+.kx_mine_header .kx_header_nav2{
+    position: absolute;
+    right: 0;
+    top:50%;
+    margin-top: -0.24rem;
+    width: 0.42rem;
+    height: 0.42rem;
+    border-radius: 50%;
+    margin-right: 1.34rem;
+    background: url("../images/kx_detail_22.png") no-repeat center center/cover;
+}
+.kx_mine_header .kx_header_nav1{
+    position: absolute;
+    right: 0;
+    top:50%;
+    margin-top: -0.24rem;
+    width: 0.46rem;
+    height: 0.46rem;
+    border-radius: 50%;
+    margin-right: 0.78rem;
+    background: url("../images/Composite-Path.png") no-repeat center center/cover;
+}
+.kx_mine_header .lb-header-nav{
+    position: absolute;
+    right: 0;
+    top:50%;
+    margin-top: -0.24rem;
+    width: 0.42rem;
+    height: 0.42rem;
+    border-radius: 50%;
+    margin-right: 0.24rem;
+    background: url("../images/kx_mine_20.png") no-repeat center center/cover;
+}
+.kx_mine_header .lb-header-title{
+    width: 3.4rem;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top:0;
+    margin-left: -1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kx_mine_header .lb-header-title span{
+    display: block;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 0.07rem;
+}
+.kx_mine_header .lb-header-title .lb-header-small{
+    width: 0.06rem;
+    height: 0.06rem;
+}
+.kx_mine_header .lb-header-title .lb-header-middle{
+    width: 0.1rem;
+    height: 0.1rem;
+}
+.kx_mine_header .lb-header-title .lb-header-big{
+    width: 0.14rem;
+    height: 0.14rem;
+}
+.kx_mine_header .lb-header-title p{
+    display: block;
+    font-size: 0.36rem;
+    color:#fff;
+    margin: 0 0.2rem;
+}
+
+
+
+.kx_mine_banner{
+    width: 100%;
+    height: 3.57rem;
+    position: relative;
+}
+.kx_mine_banner img:nth-child(1){
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.kx_mine_banner img:nth-child(2){
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.kx_mine_banner span:nth-child(3){
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    top:.8rem;
+    margin: 0 0 0 -0.6rem;
+    width: 1.2rem;
+    height: 1.15rem;
+    background: url("../images/kx_14.png") no-repeat center center/cover;
+}
+.kx_mine_banner span:nth-child(4){
+    position: absolute;
+    font-size: .3rem;
+    left: 50%;
+    top:2.2rem;
+    margin: 0 0 0 -0.353rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+.kx_mine_banner span:nth-child(5){
+    position: absolute;
+    font-size: .28rem;
+    left: 50%;
+    top:2.7rem;
+    margin: 0 0 0 -1.6rem;
+    color: #ffffff;
+}
+.kx_mine_container{
+    padding-left: .23rem;
+    padding-right: .23rem;
+    box-sizing: border-box;
+    margin-bottom:0.98rem;
+}
+.kx_mine_container .first_line{
+    width: 100%;
+    height: 2.47rem;
+    padding-top: .55rem;
+    padding-bottom: .55rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid #F1F1F1;
+}
+.kx_mine_container .first_line .inner{
+    width: 33.333%;
+    height: 100%;
+    float: left;
+}
+.kx_mine_container .first_line .inner{
+     text-align: center;
+ }
+.kx_mine_container .first_line .inner:nth-child(1) span:nth-child(1){
+    background: url("../images/kx_ablum.png") no-repeat center center/cover;
+    width: .48rem;
+    margin: .26rem auto;
+    height: .40rem;
+    display: block;
+}
+.kx_mine_container .first_line .inner:nth-child(1) span:nth-child(2){
+    font-size: .27rem;
+    display: block;
+    color: #363636;
+}
+.kx_mine_container .first_line .inner:nth-child(2){
+    border-left: 1px solid #F1F4F4;
+    box-sizing: border-box;
+    border-right: 1px solid #F1F4F4;
+}
+.kx_mine_container .first_line .inner:nth-child(2) span:nth-child(1){
+    background: url("../images/kx_friends.png") no-repeat center center/cover;
+    width: .50rem;
+    margin: .19rem auto;
+    height: .57rem;
+    display: block;
+}
+.kx_mine_container .first_line .inner:nth-child(2) span:nth-child(2){
+    font-size: .27rem;
+    display: block;
+    color: #363636;
+}
+.kx_mine_container .first_line .inner:nth-child(3) span:nth-child(1){
+    background: url("../images/kx_update.png") no-repeat center center/cover;
+    width: .48rem;
+    margin: .26rem auto;
+    height: .45rem;
+    display: block;
+}
+.kx_mine_container .first_line .inner:nth-child(3) span:nth-child(2){
+    font-size: .27rem;
+    display: block;
+    color: #363636;
+}
+
+.kx_mine_container .second_line{
+    width: 100%;
+    height: 2.47rem;
+    padding-top: .55rem;
+    padding-bottom: .55rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid #F1F1F1;
+}
+.kx_mine_container .second_line .inner{
+    width: 33.333%;
+    height: 100%;
+    float: left;
+}
+.kx_mine_container .second_line .inner{
+    text-align: center;
+}
+.kx_mine_container .second_line .inner:nth-child(1) span:nth-child(1){
+    background: url("../images/kx_reply.png") no-repeat center center/cover;
+    width: .45rem;
+    margin: .26rem auto;
+    height: .44rem;
+    display: block;
+}
+.kx_mine_container .second_line .inner:nth-child(1) span:nth-child(2){
+    font-size: .27rem;
+    display: block;
+    color: #363636;
+}
+.kx_mine_container .second_line .inner:nth-child(2){
+    border-left: 1px solid #F1F4F4;
+    box-sizing: border-box;
+    border-right: 1px solid #F1F4F4;
+}
+.kx_mine_container .second_line .inner:nth-child(2) span:nth-child(1){
+    background: url("../images/kx_heart.png") no-repeat center center/cover;
+    width: .50rem;
+    margin: .25rem auto;
+    height: .49rem;
+    display: block;
+}
+.kx_mine_container .second_line .inner:nth-child(2) span:nth-child(2){
+    font-size: .27rem;
+    display: block;
+    color: #363636;
+}
+.kx_mine_container .second_line .inner:nth-child(3) span:nth-child(1){
+    background: url("../images/kx_setting.png") no-repeat center center/cover;
+    width: .49rem;
+    margin: .24rem auto;
+    height: .50rem;
+    display: block;
+}
+.kx_mine_container .second_line .inner:nth-child(3) span:nth-child(2){
+    font-size: .27rem;
+    display: block;
+    color: #363636;
+}
+
+.kx_mine_container .third_line{
+    width: 100%;
+    height: 2.47rem;
+    padding-top: .55rem;
+    padding-bottom: .55rem;
+    box-sizing: border-box;
+}
+.kx_mine_container .third_line .inner{
+    width: 33.333%;
+    height: 100%;
+    float: left;
+}
+.kx_mine_container .third_line .inner{
+    text-align: center;
+}
+.kx_mine_container .third_line .inner:nth-child(1) span:nth-child(1){
+    background: url("../images/kx_write.png") no-repeat center center/cover;
+    width: .46rem;
+    margin: .26rem auto;
+    height: .42rem;
+    display: block;
+}
+.kx_mine_container .third_line .inner:nth-child(1) span:nth-child(2){
+    font-size: .27rem;
+    display: block;
+    color: #363636;
+}
+.kx_mine_container .third_line .inner:nth-child(2){
+    border-left: 1px solid #F1F4F4;
+    box-sizing: border-box;
+    border-right: 1px solid #F1F4F4;
+}
+.kx_mine_container .third_line .inner:nth-child(2) span:nth-child(1){
+    background: url("../images/kx_15.png") no-repeat center center/cover;
+    width: .46rem;
+    margin: .23rem auto;
+    height: .56rem;
+    display: block;
+}
+.kx_mine_container .third_line .inner:nth-child(2) span:nth-child(2){
+    font-size: .27rem;
+    display: block;
+    color: #363636;
+}
+.kx_mine_container .third_line .inner:nth-child(3) span:nth-child(1){
+    background: url("../images/kx_16.png") no-repeat center center/cover;
+    width: .58rem;
+    margin: .20rem auto;
+    height: .58rem;
+    display: block;
+}
+.kx_mine_container .third_line .inner:nth-child(3) span:nth-child(2){
+    font-size: .27rem;
+    display: block;
+    color: #363636;
+}
+.kx_mine_footer{
+    width: 100%;
+    height: 0.98rem;
+    background: #003eff;
+    position: fixed;
+    left:0;
+    bottom: 0;
+    z-index: 999;
+}
+.kx_mine_footer a{
+    display: block;
+    float: left;
+    width: 20%;
+    padding: 0 0.44rem;
+    box-sizing: border-box;
+}
+.kx_mine_footer a span{
+    display: block;
+    width: 0.64rem;
+    height: 0.67rem;
+    margin-top: 0.04rem;
+}
+.kx_mine_footer a span img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.kx_mine_footer a p{
+    display: block;
+    width: 100%;
+    height: 0.2rem;
+    line-height: 0.2rem;
+    font-size: 0.2rem;
+    text-align: center;
+    color: #fff;
+}

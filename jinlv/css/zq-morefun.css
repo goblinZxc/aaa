@@ -1,0 +1,216 @@
+/*$头部开始*/
+*{
+    box-sizing:border-box;
+}
+.gzh-header{
+    width: 100%;
+    height: 0.88rem;
+    background: #3867FA;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0.2rem;
+}
+.gzh-header-left.active{
+    width: 0.42rem;
+    height: 0.42rem;
+    border-radius: 50%;
+    box-shadow: 0 0.05rem 0.1rem 0.02rem #1D45C5;
+}
+.gzh-header .gzh-header-left>a{
+    display: flex;
+    align-items:center;
+}
+.gzh-header .gzh-header-left img{
+    width: 0.5rem;
+    margin-top: 0.1rem;
+}
+.gzh-header .gzh-header-center.active{
+    margin-left: 1rem;
+}
+.gzh-header .gzh-header-center img{
+    width: 0.8rem;
+}
+.gzh-header .gzh-header-center>a{
+    display: flex;
+    align-items:center;
+}
+.gzh-header .gzh-header-center a>h1{
+     font-size: 0.36rem;
+    padding:0 0.12rem;
+    color: #FFFFFF;
+}
+.gzh-header .gzh-header-center a>img{
+    margin-top: 0.12rem;
+    vertical-align: middle;
+}
+.gzh-header .gzh-header-right{
+    width: 0.42rem;
+    height: 0.42rem;
+    border-radius: 50%;
+    /*box-shadow: 0 0.05rem 0.1rem 0.02rem #1D45C5;*/
+}
+.gzh-header .gzh-header-right>a{
+    display: flex;
+    align-items:center;
+}
+.gzh-header .gzh-header-right>a>img{
+    width: 0.42rem;
+}
+/*$头部结束*/
+/*$玩法开始*/
+.zq-wanfa{
+    width: 4.05rem;
+    height: 0.5rem;
+    margin: 0.4rem auto;
+    position: relative;
+    line-height: 0.5rem;
+    font-size: 14px;
+    text-align: center;
+    color: #3867fa;
+}
+.zq-wanfa .zq-wanfa-tu{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: -0.1rem;
+}
+.zq-wanfa .zq-wanfa-tu>img{
+   width: 100%;
+}
+/*$玩法结束*/
+/*$挑选列表开始*/
+.zq-content{
+    width: 6.95rem;
+    height: 8rem;
+    margin: 0 auto;
+    position: relative;
+}
+.zq-yq{
+    border-radius: 50%;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+}
+.zq-content .zq-yq.active{
+    background-image: url(../images/zq-y7.png);
+}
+.zq-content .sm-box{
+    width: 1.8rem;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    left: 2rem;
+    top: 0;
+    background: url(../images/zq-y1.png)no-repeat center center/cover;
+}
+.zq-content .gef-box{
+    width: 2.11rem;
+    height: 2.11rem;
+    line-height: 2.11rem;
+    left: 4rem;
+    top: 0.2rem;
+    background: url(../images/zq-y1.png)no-repeat center center/cover;
+}
+.zq-content .ts-box{
+    width: 2.11rem;
+    height: 2.11rem;
+    line-height: 2.11rem;
+    left: 0.1rem;
+    top: 1rem;
+    background: url(../images/zq-y1.png)no-repeat center center/cover;
+}
+.zq-content .qs-box{
+    width: 2.3rem;
+    height: 2.3rem;
+    line-height: 2.3rem;
+    left: 2.5rem;
+    top: 2rem;
+    background: url(../images/zq-y1.png)no-repeat center center/cover;
+}
+.zq-content .sj-box{
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    left: 5rem;
+    top: 2.5rem;
+    background: url(../images/zq-y3.png)no-repeat center center/cover;
+}
+.zq-content .pl-box{
+    width: 1.65rem;
+    height: 1.65rem;
+    line-height: 1.65rem;
+    left: 1rem;
+    top: 3.5rem;
+    background: url(../images/zq-y4.png)no-repeat center center/cover;
+}
+.zq-content .tb-box{
+    width: 2.11rem;
+    height: 2.11rem;
+    line-height: 2.11rem;
+    left: 2.4rem;
+    top: 4.6rem;
+    background: url(../images/zq-y5.png)no-repeat center center/cover;
+}
+.zq-content .py-box{
+    width: 2.11rem;
+    height: 2.11rem;
+    line-height: 2.11rem;
+    left: 4.6rem;
+    top: 4.8rem;
+    background: url(../images/zq-y6.png)no-repeat center center/cover;
+}
+.zq-content .ly-box{
+    width: 1.65rem;
+    height: 1.65rem;
+    line-height: 1.65rem;
+    left: 0.5rem;
+    top:5.5rem;
+    background: url(../images/zq-y5.png)no-repeat center center/cover;
+}
+/*$挑选列表结束*/
+/*$底部开始*/
+.footer-xyb{
+    width: 70%;
+    height: 0.5rem;
+    margin: 0 auto;
+    position: relative;
+}
+.footer-xyb-left{
+    float: left;
+    font-size: 14px;
+    color: #4254ff;
+    background: rgba(0,0,0,0);
+    border:none;
+}
+.footer-xyb-right{
+    float: right;
+    font-size: 14px;
+    color: #4254ff;
+}
+.footer-xyb .img-tu{
+    width: 1.46rem;
+    height: 1.46rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -0.73rem;
+    top: -0.73rem;
+}
+.footer-xyb .img-tu>img{
+    width: 100%;
+}
+/*＄底部结束*/
+
+
+
+
+
+
+
+
+
+
+
+

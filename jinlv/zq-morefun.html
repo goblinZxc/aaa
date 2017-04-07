@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>更多玩法</title>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0"/>
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <script src="js/rem.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/zq-morefun.css">
+    <script src="js/zepto.min.js"></script>
+</head>
+<body>
+<!--$头部开始-->
+    <div class="gzh-header">
+        <div class="gzh-header-left">
+            <a href="zq-huodong.html">
+                <img src="images/zq-out1.png" alt="">
+            </a>
+        </div>
+        <div class="gzh-header-center">
+            <a href="">
+                <img src="images/cn-16.png" alt="">
+                <h1>更多玩法</h1>
+                <img src="images/cn-17.png" alt="">
+            </a>
+            
+        </div>
+        <div class="gzh-header-right">
+            <!-- <a href="">
+                <img src="images/zq-ser.png" alt="">
+            </a> -->
+        </div>
+</div>
+
+<!--$头部结束-->
+<!--$玩法开始-->
+<div class="zq-wanfa">
+    <div class="zq-wanfa-tu">
+        <img src="images/zq-bigheaad.png" alt="">
+    </div>
+    选择您喜欢的方法
+</div>
+<!--$玩法结束-->
+<!--$挑选列表开始-->
+<div class="zq-content">
+    <div class="sm-box zq-yq">沙漠</div>
+    <div class="gef-box zq-yq">高尔夫</div>
+    <div class="ts-box zq-yq">跳伞</div>
+    <div class="qs-box zq-yq active">潜水</div>
+    <div class="sj-box zq-yq">射击</div>
+    <div class="pl-box zq-yq">漂流</div>
+    <div class="tb-box zq-yq">徒步</div>
+    <div class="py-box zq-yq">攀岩</div>
+    <div class="ly-box zq-yq">露营</div>
+</div>
+<!--$挑选列表结束-->
+<!--$底部开始-->
+<div class="footer-xyb">
+    <input type="button" value="重置" class="footer-xyb-left">
+    <a href="zq-huodongxiangqing.html" class="footer-xyb-right">下一步</a>
+    <div class="img-tu">
+        <img src="images/zq-nin.png" alt="">
+    </div>
+</div>
+<!--$底部结束-->
+</body>
+<script>
+    var zqyq = $(".zq-yq");
+//    for(var i = 0;i<zqyq.length;i++){
+
+        zqyq.on('touchstart', function () {
+            if($(this).hasClass("active")){
+                $(this).removeClass("active" );
+            }else{
+                $(this).addClass("active" );
+            }
+        });
+//    }
+    var xybleft = $('.footer-xyb-left');
+    xybleft.on('touchstart', function () {
+        zqyq.removeClass("active");
+    })
+</script>
+</html>

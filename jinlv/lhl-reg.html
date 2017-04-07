@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <link rel="stylesheet" href="css/lhl.css">
+    <script src="js/rem.js"></script>
+</head>
+<body>
+<div class="lhl-bg"></div>
+<div class="lhl-container">
+    <div class="lhl-reglogo">
+        <img src="images/lhl-logo.png" alt="">
+    </div>
+    <!--表单提交-->
+    <div class="lhl-form">
+        <form action="">
+            <div class="lhl-inputbox">
+                <img src="images/lhl-email.png" alt="" class="lhl-input-logo">
+                <input type="email" placeholder="请输入邮箱"class="lhl-in">
+                <img src="images/lhl-ok.png" alt="" class="lhl-ok">
+            </div>
+            <div class="lhl-inputbox">
+                <img src="images/lhl-pass.png" alt="" class="lhl-input-logo">
+                <input type="password" placeholder="请输入密码"class="lhl-in">
+                <img src="images/lhl-ok.png" alt="" class="lhl-ok">
+            </div>
+            <div class="lhl-inputbox">
+                <img src="images/lhl-pass.png" alt="" class="lhl-input-logo">
+                <input type="password" placeholder="请再次输入密码"class="lhl-in">
+                <img src="images/lhl-ok.png" alt="" class="lhl-ok">
+            </div>
+            <div class="lhl-inputbox2">
+                <input type="radio">&nbsp;同意协议并注册
+            </div>
+            <div>
+                <a href="lhl-reg-ok.html" class="lhl-tijiao">注册
+                   <!--  <input type="submit" value="注册" class="lhl-tijiao"> -->
+                </a>
+            </div>
+            
+        </form>
+    </div>
+    <!--表单结束-->
+
+</div>
+<!--返回-->
+<a href="lhl-log-index.html" class="lhl-back">
+    <img src="images/lhl-back.png" alt="">
+</a>
+<script>
+    var ss=document.getElementsByClassName("lhl-in");
+    var ok=document.getElementsByClassName("lhl-ok");
+    var tijiao=document.getElementsByClassName("lhl-tijiao")[0];
+    for (var i = 0; i < ss.length; i++) {
+        ss[i].aa=i;
+        ss[i].onchange=function(){
+            if(this.value==""){
+                ok[this.aa].style.display="none"
+            }else{
+               ok[this.aa].style.display="block" 
+            }
+        }  
+    };
+    tijiao.onclick=function(){
+        this.style.background="#fff";
+        this.style.color="#3b62f4";
+    }
+</script>
+</body>
+</html>

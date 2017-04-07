@@ -1,0 +1,177 @@
+@import url(base.css);
+header{
+	width: 100%;height: .88rem;
+	background: #3B67FA;
+}
+/*导航*/
+.gxf-header1{
+	justify-content:space-between;
+	display:flex;
+}
+.gxf-fanhui{
+	width: .5rem;height: .5rem;
+	float: left;
+	margin-top: .2rem;
+	margin-left: .24rem
+}
+.gxf-fanhui img{
+	width: .48rem;
+	float: left;
+}
+.gxf-inbox{
+	width: 3.41rem;height: .45rem;
+	border:0px;
+	padding:0 .1rem;
+	float: left;
+	margin-top: .20rem;
+	position: relative;
+	margin-left: .3rem;
+	box-sizing:border-box;
+}
+.gxf-inbox img{
+	width: .6rem;
+	float: left;
+	margin-top: .18rem;
+}
+.gxf-inbox span{
+	font-size: .33rem;
+	float: left;
+	color:#FFFFFF;
+	line-height: .55rem;
+}
+.gxf-sousuo{
+	float: left;
+	width: .27rem;height: .41rem;
+}
+.gxf-sousuo img{
+	width: 100%;
+	float: left;
+	margin-top: .1rem;
+}
+/*.gxf-quxiao{
+	width: .4rem;height: .42rem;
+	margin-right: .2rem;
+	margin-top:.24rem;	
+}*/
+.gxf-quxiao img{
+	float: left;
+	width: .42rem;
+	margin:0.23rem;
+}
+
+/*                      中间*/
+
+
+/*不可错过*/
+.gxf-yuanchuangbox{
+	width: 100%;height: auto;
+	padding:0 .5rem;
+	box-sizing:border-box;
+}
+.gxf-yuanchuang1{
+	width: 4.3rem;height: 0.35rem;
+	margin:0 auto;
+	margin-top: .4rem;
+}
+.gxf-yuanchuang1 img{
+	width: .75rem;
+	float: left;
+	margin-top: .18rem;
+	margin-right: .2rem;
+}
+.gxf-yuanchuang1 img:last-child{
+	margin-left: .2rem;
+	margin-right: 0;
+}
+.gxf-yuanchuang1 p{
+	font-size:.28rem;
+	color:#363636;
+	float: left;
+}
+.gxf-pingyaobox{
+	width: 100%;
+	height: auto;
+	margin-top: .25rem;
+}
+.gxf-pingyaobox p,.gxf-pingyaobox2{
+	font-size: .22rem;
+	color:#898989;
+}
+.gxf-buke-img{
+	width: 100%;height: 3rem;
+	border-radius: .15rem;
+	background: blue;
+	margin-top: .25rem;
+}
+.gxf-buke-img img{
+	width: 100%;
+}
+
+/************走进*/
+.gxf-zoujinbox{
+	width: 100%;height: auto;
+	padding:0 .5rem;
+	box-sizing:border-box;
+	margin-bottom: 0.2rem;
+}
+.gxf-zoujin{
+	width: 3.05rem;height: .7rem;
+	margin:0 auto;
+	position: relative;
+	margin-top:.4rem;
+}
+.gxf-zoujin img:nth-child(1){
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left:0;right:0;
+	margin:0 auto;
+}
+.gxf-p1{
+	font-size: .27rem;
+	color:#363636;
+	position: absolute;
+	top:.1rem;
+	left: .1rem;right: 0;
+	margin: 0 auto;
+}
+.gxf-zoujin img:nth-child(3){
+	width: 2.55rem;
+	position: absolute;
+	bottom: -.1rem;left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.gxf-buke-w2{
+	width: 100%;height:auto;
+}
+/*寻找*/
+.gxf-p2{
+	font-size: .27rem;
+	color:#363636;
+	position: absolute;
+	top:.1rem;
+	left: .5rem;
+}
+.gxf-pingyaobox2{
+	width: 100%;
+	height: auto;
+	margin-top: .15rem;
+	position: relative;
+}
+.gxf-xiala{
+	width: 2.6rem;height: .32rem;
+	margin:0 auto;
+	position: relative;
+	text-align: center;
+}
+.gxf-xiala img{
+	height: 100%;
+	position: absolute;
+}
+.gxf-xiala span{
+	font-size: .12rem;
+	color:#DDDDDD;
+	margin-left: .3rem;
+	line-height: .1rem;
+}
