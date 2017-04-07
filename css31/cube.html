@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		ul,li{padding: 0;margin: 0;list-style: none;}
+		.cube{width: 500px;height: 500px;border: 1px solid red;margin: 200px auto;perspective:1200px;perspective-origin:left center;}
+		.box{width: 300px;height: 300px;position: relative;margin: 100px auto;transform-style:preserve-3d;transform-origin:50% 50% 150px;}
+		.cube:hover .box{transition:all 2s;transform:rotate3d(1,0,0,360deg);}
+		.side{width: 100%;height: 100%;position: absolute;border: 1px solid #000;box-shadow: 0 0 35px #000 inset;text-align: center;line-height: 300px;font-size: 100px;backface-visibility:visible;}
+		.side:nth-child(1){background: r ed;transform:translateX(-100%) rotateY(90deg);transform-origin:right;}
+		.side:nth-child(2){background: yello w;transform:translateY(-100%) rotateX(-90deg);transform-origin:bottom;}
+		.side:nth-child(3){background: gr een;transform:translateZ(300px);}
+		/*Z轴不支持百分比*/
+		.side:nth-child(4){background: bl ue;}
+		.side:nth-child(5){background: pin k;transform:translateX(100%) rotateY(-90deg);transform-origin:left;}
+		.side:nth-child(6){background: sil ver;transform:translateY(100%) rotateX(90deg);transform-origin:top;}
+	</style>
+</head>
+<body>
+	<div class="cube">
+		<ul class="box">
+			<li class="side">1</li>
+			<li class="side">2</li>
+			<li class="side">3</li>
+			<li class="side">4</li>
+			<li class="side">5</li>
+			<li class="side">6</li>
+		</ul>
+	</div>
+</body> 
+</html>

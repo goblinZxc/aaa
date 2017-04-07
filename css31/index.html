@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>旋转木马</title>
+    <style>
+        body,ul,li{
+            margin:0;
+            padding:0;
+            list-style:none;
+        }
+        .box{
+            width:800px;
+            height:500px;
+            margin: 50px auto;
+            border:1px solid red;
+            perspective: 1200px;
+        }
+        .list{
+            width:400px;
+            height:200px;
+            position: relative;
+            transform-style: preserve-3d;
+            margin:150px 200px;
+            transition: all 2s;
+        }
+        .list li{
+            width:395px;
+            height:170px;
+            position: absolute;
+        }
+        .list li:nth-child(1){
+            background:url(1.jpg) no-repeat center center/cover;
+        }
+        .list li:nth-child(2){
+            background:url(2.jpg) no-repeat center center/cover;
+        }
+        .list li:nth-child(3){
+            background:url(3.jpg) no-repeat center center/cover;
+        }
+        .list li:nth-child(4){
+            background:url(4.jpg) no-repeat center center/cover;
+        }
+        .list li:nth-child(5){
+            background:url(5.jpg) no-repeat center center/cover;
+        }
+        .list li:nth-child(6){
+            background:url(6.jpg) no-repeat center center/cover;
+        }
+        .prev,.next{
+            width:50px;
+            height:50px;
+            border-radius: 5px;
+            background: #333;
+            text-align: center;
+            line-height:50px;
+            font-size: 30px;
+            position: absolute;
+            cursor: pointer;
+        }
+        .prev{
+              bottom:0;left:0;
+          }
+        .next{
+            bottom:0;right:0;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <ul class="list">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div class="prev">&lt;</div>
+    <div class="next">&gt;</div>
+</div>
+</body>
+<script>
+    var box=document.getElementsByClassName("box")[0];
+    var list=box.getElementsByClassName("list")[0];
+    var lis=list.getElementsByTagName("li");
+    var prev=box.getElementsByClassName("prev")[0];
+    var next=box.getElementsByClassName("next")[0];
+    var Ang=360/lis.length;
+    var w=lis[0].offsetWidth;
+    var r=w/2/Math.tan(Ang/2*Math.PI/180)+60;
+    var a=0;
+    for(var i=0;i<lis.length;i++){
+        lis[i].style.transform="rotateY("+i*Ang+"deg) translateZ("+r+"px)"
+    }
+    setInterval(function(){
+        a-=Ang;
+        list.style.transform="rotateY("+a+"deg)"
+    },5000)
+    prev.onclick=function(){
+        a+=Ang;
+        list.style.transform="rotateY("+a+"deg)"
+    }
+    next.onclick=function(){
+        a-=Ang;
+        list.style.transform="rotateY("+a+"deg)"
+    }
+</script>
+</html>
