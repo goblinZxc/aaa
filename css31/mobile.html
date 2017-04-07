@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<style>
+	ul,li{padding: 0;margin: 0;list-style: none;}
+	.box{width: 80px;height: 80px;border-radius: 50%;position: relative;margin: 200px auto;}
+	.btn{position: absolute;z-index: 999;width: 100%;height: 100%;background: url(add.png) center center no-repeat;}
+	li{width: 100%;height: 100%;border-radius: 50%;position: absolute;}
+	li:nth-child(1){background: url(q1.png) center center no-repeat;background-size: 80px 80px;}
+	li:nth-child(2){background: url(q2.png) center center no-repeat;background-size: 80px 80px;}
+	li:nth-child(3){background: url(q3.png) center center no-repeat;background-size: 80px 80px;}
+	li:nth-child(4){background: url(q4.png) center center no-repeat;background-size: 80px 80px;}
+</style>
+</head>
+<body>
+	<div class="box">
+		<div class="btn"></div>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</body>
+<script>
+	var lis=document.getElementsByTagName('li');
+	var r=180;
+	var w=90/(lis.length-1);
+	function getXY(ang){
+		var Ang=ang*Math.PI/180; 
+		var x=Math.sin(Ang)*r;
+		var y=Math.cos(Ang)*r;
+		return {x:-x,y:-y};
+	}
+	// console.log(getXY(30));
+	var btn=document.getElementsByClassName("btn")[0];
+	var flag=false;
+	btn.onclick=function(){
+		if(!flag){
+			flag=true;
+			for(var i=0;i<lis.length;i++){
+				lis[i].style.transform='rotate(360deg) translate('+getXY(w*i).x+'px,'+getXY(w*i).y+'px'+')'
+				lis[i].style.transition='transform 2s '+i*100+'ms';
+			// console.log(getXY(w*i).x);
+			// console.log(getXY(w*i).y);
+			}
+		}else{
+			flag=false;
+			for(var i=0;i<lis.length;i++){
+				lis[i].style.transform="rotate(0deg) translate(0,0)";
+				lis[i].style.transition='transform 2s'+(lis.length-i)*100+'ms';
+			}
+		}
+	}
+		// for(var i=0;i<lis.length;i++){
+		// 	lis[i].onclick=function(){
+		// 			lis[i].style.transform="translate(0,0)";
+		// 			lis[i].style.transition='transform .1s'+(lis.length-i)*100+'ms';
+		// 		}
+		// 	}
+</script>
+</html>
