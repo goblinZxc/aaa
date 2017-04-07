@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDoList—最简单的待办事项列表</title>
+</head>
+<style>
+    body,ul,li,input,h4,p{
+        margin:0;
+        padding:0;
+        list-style: none;
+    }
+    body{
+        font-family: "Microsoft YaHei";
+        background: #67CCE2;
+    }
+    .nav{
+        width:100%;
+        height: 50px;
+        background: #9B8FCE;
+    }
+    .nav-box{
+        width:600px;
+        height:50px;
+        margin:0 auto;
+    }
+    .logo{
+        height: 50px;
+        line-height: 50px;
+        color:#FCEC99;
+        float: left;
+        font-size: 22px;
+    }
+    .nav-box input{
+        width:350px;
+        height:30px;
+        border:0;
+        border:1px solid #ddd;
+        float: right;
+        margin: 9px;
+        padding-left:10px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px #aaa inset;
+    }
+    section{
+        width:600px;
+        height: auto;
+        margin:0 auto;
+    }
+    section header{
+        width:600px;
+        height:60px;
+        line-height: 60px;
+        color:#5c2699;
+    }
+    section header h4{
+        float: left;
+        font-size: 24px;
+    }
+    header span{
+        width:20px;
+        height:20px;
+        background: #FCEC99;
+        line-height: 20px;
+        float: right;
+        text-align: center;
+        margin-top: 20px;
+        border-radius: 50%;
+    }
+    ul{
+        width:600px;
+        height: auto;
+        overflow: hidden;
+        border-radius: 7px;
+        background: lightpink;
+        padding:10px 0;
+    }
+    ul li{
+        width:600px;
+        height:30px;
+        background: #fff;
+        box-sizing: border-box;
+        border-left:4px solid #9B8FCE;
+        border-radius:5px;
+        float: left;
+        margin:10px 0;
+    }
+    ul li input{
+        width:20px;
+        height:20px;
+       margin: 5px 5px 5px 15px;
+        float: left;
+        
+    }
+    ul li p{
+        width:400px;
+        display: block;
+        margin: 5px;
+        height:20px;
+        border:1px solid #eee;
+        float: left;
+        line-height: 20px;;
+    }
+    ul li .btn{
+        width:10px;
+        height: 10px;
+        background-origin: content-box;
+        background-clip:content-box;
+        background-color: #ddd;
+        border:1px solid #ddd;
+        padding:2px;
+        float: right;
+        border-radius: 50%;
+        color:#fff;
+        font-size: 24px;
+        line-height: 6px;
+        margin:5px;
+        cursor: pointer;
+    }
+    ul li time{
+        display: block;
+        width:100px;
+        height:20px;
+        float: left;
+        margin-top:5px;
+        margin-left:15px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .nowU li{
+        cursor: move;
+    }
+</style>
+<body>
+
+    <header>
+        <div class="nav">
+            <div class="nav-box">
+                <div class="logo">ToDoList</div>
+                <input type="text" placeholder="添加ToDo" id="input">
+            </div>
+
+        </div>
+    </header>
+
+    <section>
+        <div class="now ">
+            <header>
+                <h4>正在进行</h4>
+                <span class="nowNum">0</span>
+            </header>
+            <ul class="nowU">
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div class="complete">
+            <header>
+                <h4>已经完成</h4>
+                <span class="comNum">0</span>
+            </header>
+            <ul class="comU">
+
+            </ul>
+        </div>
+    </section>
+
+</body>
+<script>
+    //获取元素
+    var input=document.querySelector("#input");
+    var nowNum=document.querySelector(".nowNum");
+    var comNum=document.querySelector(".comNum");
+    var nowU=document.querySelector(".nowU");
+    var comU=document.querySelector(".comU");
+    //数据处理
+    var ToDo=getItem();
+    function getItem(){
+        var todo=localStorage.getItem("todo")||"[]";
+        return JSON.parse(todo);
+    }
+    function setItem(val){
+       localStorage.setItem("todo",JSON.stringify(val))
+    }
+    //设置一个时间
+    function GetTime() {
+        var date=new Date();
+        var y=date.getFullYear();
+        var m=date.getMonth()+1;
+        var d=date.getDate();
+        var h=date.getHours();
+        var min=date.getMinutes();
+        return  (y+'/'+m+'/'+d+' '+h+':'+min);
+    }
+    //添加事件
+    function add(t){
+        var lit=GetTime();
+        ToDo.unshift(
+                {title:t,done:true,time:lit}
+        )
+        setItem(ToDo);
+        reload()
+    }
+    //内容处理
+    function reload(){
+        var Ncon="";
+        var Econ="";
+        var n=0;
+        var s=0;
+        for(var i=0;i<ToDo.length;i++){
+            if(ToDo[i].done==true){
+                n++;
+                Ncon+='<li><input type="checkbox" onclick=change('+i+',"done",false)>'+
+                        '<p contenteditable="true" onblur=change('+i+',"title",this.innerHTML)>'+ToDo[i].title+'</p>'+
+                                '<time>'+ToDo[i].time+'</time>'+
+                        '<div class="btn" onclick=del('+i+')>-</div></li>';
+
+            }else{
+                s++;
+                Econ+='<li><input type="checkbox" checked onclick=change('+i+',"done",true)>'+
+                        '<p contenteditable="true">'+ToDo[i].title+'</p>'+
+                        '<time>'+ToDo[i].time+'</time>'+
+                        '<div class="btn" onclick=del('+i+')>-</div></li>';
+            }
+        }
+        nowNum.innerHTML=n;
+        nowU.innerHTML=Ncon;
+        comNum.innerHTML=s;
+        comU.innerHTML=Econ;
+    }
+    //键盘事件
+    input.onkeydown=function (e) {
+        var e=e||window.event;
+        if(e.keyCode==13){
+            if(this.value.length==0){
+                alert("不能为空！")
+                return;
+            }
+            var f=this.value;
+            add(f)
+            this.value="";
+        }
+    }
+    reload()
+    //改变事件
+    function change(i,key,value){
+        ToDo[i][key]=value;
+        setItem(ToDo);
+        reload();
+    }
+
+    function del(i){
+        ToDo.splice(i,1)
+        localStorage.removeItem(ToDo[i]);
+        setItem(ToDo);
+        reload();
+    }
+</script>
+<script>
+//    一、布局
+//      1. header  logo input()
+//      2. section  now  complete/finish  header span
+//    二、 处理数据
+//           * 判断数组对象done的false和true加到对应的元素中即可
+//    三、 插入数据
+//       1. onkeydown 事件，事件对象判断键盘码是否为13，是的话：获取并保存当前的value,用add()添加,清空value
+//       2. add函数，给ToDo数组之前添加一个对象，形参是title中的值，done是true;
+//    四、change事件
+//       1.三个形参，i-->第几个，key-->属性 ，value-->值
+//    五、删除事件，点击按钮删除数组中的第几个元素，注意是数组！用 splice;
+//    六、浏览器存储数据，先set思路会清晰一些，注意字符串和JSON格式的转化。每添加，改变的时候要set一次数据
+//
+
+
+</script>
+</html>
